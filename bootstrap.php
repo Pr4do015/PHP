@@ -17,9 +17,15 @@
     $numeros = [1,3,6,9,12,15];
 
     foreach ($numeros as $key => $value) {
-    echo'<div class="alert alert-success">';
-    echo"   <strong>Success!</strong> Sucesso $value";
-    echo'</div>';
+      if ($value ==15) {
+        echo'<div class="alert alert-danger">';
+        echo"   <strong>Success!</strong> Sucesso $value";
+        echo'</div>';
+      }
+      echo'<div class="alert alert-success">';
+      echo"   <strong>Success!</strong> Sucesso $value";
+      echo'</div>';
+      
     }
   ?>
 
