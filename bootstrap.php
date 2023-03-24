@@ -16,16 +16,22 @@
   <?php
     $numeros = [1,3,6,9,12,15];
 
+    
+
     foreach ($numeros as $key => $value) {
-      if ($value ==15) {
+
+      $ispar =(($value %2) ==0) ;
+
+      if ($ispar) {
         echo'<div class="alert alert-danger">';
         echo"   <strong>Success!</strong> Sucesso $value";
         echo'</div>';
       }
+      else{
       echo'<div class="alert alert-success">';
       echo"   <strong>Success!</strong> Sucesso $value";
       echo'</div>';
-      
+      }
     }
   ?>
 
